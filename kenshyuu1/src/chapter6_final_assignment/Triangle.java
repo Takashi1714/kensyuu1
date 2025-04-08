@@ -17,9 +17,9 @@ public class Triangle extends Polygon{
 	//図形を描画
     public void draw() {
     	
-    	System.out.println("[三角形を描画] 点1(" + p1.getX() + "," + p1.getY() + ")から点2(" + p2.getX() + "," + p2.getY() + ")、点3(" + p3.getX() + "," + p3.getY() + ")の三角形"):
+    	System.out.println("[三角形を描画] 点1(" + p1.getX() + "," + p1.getY() + ")から点2(" + p2.getX() + "," + p2.getY() + ")、点3(" + p3.getX() + "," + p3.getY() + ")の三角形");;
 	
-　　}
+    }
 
     public double getPerimeter() {
     	

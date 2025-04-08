@@ -29,18 +29,21 @@ public class Main {
         	Triangle triangle = new Triangle(0, 0, 100, 100, 0, 200); // 点1(0, 0), 点2(100, 100), 点3(0, 200)
         	triangle.draw();
         	System.out.println("三角形の周囲の長さは、" + triangle.getPerimeter());
+        	System.out.println("内角の和は、180");
             break;
         case 4:
         	// Rectanngleオブジェクトを作成して長方形を描画
         	Rectangle rectangle = new Rectangle(0, 0, 100, 50); //点(0, 0), 幅100, 高さ50の長方形
         	rectangle.draw();
             System.out.println("長方形の周囲の長さは、" + rectangle.getPerimeter());
+            System.out.println("内角の和は、360");
             break;
         case 44:
         	// Squareオブジェクトを生成して正方形を描画
         	Square square = new Square(new Point(0, 0), 200); //点(0, 0), 幅・高さ200の正方形
         	square.draw();
-            System.out.println("[正方形を描画] 点(0,0)を基準として幅・高さ100の正方形");
+            System.out.println("正方形の周囲の長さは、" + square.getPerimeter());
+            System.out.println("内角の和は、360");
             break;
         default:
             System.out.println("不正な入力です。プログラムを終了します。");

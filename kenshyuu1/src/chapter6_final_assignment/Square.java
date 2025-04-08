@@ -14,6 +14,11 @@ public class Square extends Rectangle{
 		System.out.println("[正方形を描画]点(0,0)を基準として幅・高さ200の正方形");
 		
 	}
+	
+	public double getPerimeter() {
+		return (width + width)*2;
+		
+	}
 
 }
 
