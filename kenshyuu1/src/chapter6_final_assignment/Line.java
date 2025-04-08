@@ -1,6 +1,6 @@
 package chapter6_final_assignment;
 
-public abstract class  Line implements Figure{
+public class  Line implements Figure{
 	//始点を表すPoint型のprivateフィールドの定義
 	private Point p1;
 	private Point p2;
@@ -18,6 +18,7 @@ public abstract class  Line implements Figure{
 		
 	}
 	
+	@Override
 	//メッセージの出力と図形描画
 	public void draw() {
 		System.out.println("[線を描画]始点("+p1.getX() + "," + p1.getY() + ")から終点("+ p2.getX() + "," + p2.getY() + ")まで");
@@ -26,7 +27,7 @@ public abstract class  Line implements Figure{
 	
 	//距離を計算するメソッド
     public double getPerimeter() {
-    	return Math.sqrt(Math.pow(p2.getX()-p1.getX(), 2) + Math.pow(p2.getY()-p2.getY(), 2));
+    	return Math.sqrt(Math.pow(p2.getX()-p1.getX(), 2) + Math.pow(p2.getY()-p1.getY(), 2));
     }
     
 	

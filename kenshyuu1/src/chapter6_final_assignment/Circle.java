@@ -1,6 +1,6 @@
 package chapter6_final_assignment;
 
-public abstract class Circle extends Shape {
+public class Circle extends Shape {
 	
 	private Point  center;
 	private int radious;
