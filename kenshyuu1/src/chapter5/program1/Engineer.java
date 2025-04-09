@@ -1,23 +1,31 @@
 package chapter5.program1;
 
-class Engineer extends Employee {
-    private String language;
+class Engineer extends Employee{
+	//プライベート属性
+	private String Language;
 
-    public Engineer(String name, String language) {
-        super(name, "エンジニア");
-        this.language = language;
+
+    //コンストラクタ
+    public Engineer(String name, String department, String Language) {
+    	super(name, department);
+    	this.Language = Language;
+    	
     }
-
-    public String getLanguage() {
-        return language;
+    
+    //プライベート属性のゲッターメソッド
+    public String  getLanguage() {
+    	return Language;
     }
-
+    
+    //開発実施メソッド
     public void develop() {
-    	System.out.println(language + "で開発を行った");
+    	System.out.println(getLanguage() + "で開発を行った");
     }
-
+    
+    //抽象メソッドの実装
     @Override
-    void displayInfo() {
-        System.out.println(getName() + "：" + getDepartment() + " 使用言語：" + language);
+    protected void displayInfo() {
+    	System.out.println(getName() + ":" + getDepartment() + " 使用言語:" + getLanguage());
     }
+    
 }
